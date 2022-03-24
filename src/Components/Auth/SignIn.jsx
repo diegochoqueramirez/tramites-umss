@@ -11,6 +11,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useDispatch } from 'react-redux';
+import { setUser } from '../../redux/slices/userSlice';
 
 function Copyright(props) {
   return (
@@ -34,8 +36,10 @@ const theme = createTheme();
 
 export default function SignIn() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleSubmit = () => {
+    dispatch(setUser({ email: 'asd@gmail.com', password: '123456' }));
     navigate('/dashboard');
   };
 
