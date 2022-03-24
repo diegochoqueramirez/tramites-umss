@@ -38,7 +38,6 @@ export default function SignUp() {
     const data = new FormData(event.currentTarget);
     console.log({
       email: data.get('email'),
-      password: data.get('password'),
     });
   };
 
