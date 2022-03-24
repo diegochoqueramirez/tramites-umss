@@ -86,7 +86,7 @@ export default function SignUp() {
             </Button>
             <Grid container>
               <Grid item>
-                <Route to='/'>Don't have an account? Sign Up</Route>
+                <Route to='/'>Already have an account? Sign in</Route>
               </Grid>
             </Grid>
           </Box>
