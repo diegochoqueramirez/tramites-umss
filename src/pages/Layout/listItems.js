@@ -8,11 +8,12 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PeopleIcon from '@mui/icons-material/People';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+
 
 export const mainListItems = (
   <React.Fragment>
-    <ListItemButton>
+    <ListItemButton component='a' href='/roles'>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
@@ -48,25 +49,19 @@ export const mainListItems = (
 export const secondaryListItems = (
   <React.Fragment>
     <ListSubheader component='div' inset>
-      Saved reports
+      Gestion de Seguridad
     </ListSubheader>
-    <ListItemButton>
+    <ListItemButton component='a' href='/roles'>
       <ListItemIcon>
-        <AssignmentIcon />
+        <AdminPanelSettingsIcon />
       </ListItemIcon>
-      <ListItemText primary='Current month' />
+      <ListItemText primary='Roles' />
     </ListItemButton>
-    <ListItemButton>
+    <ListItemButton  component='a' href='/users'>
       <ListItemIcon>
-        <AssignmentIcon />
+        <PeopleIcon />
       </ListItemIcon>
-      <ListItemText primary='Last quarter' />
-    </ListItemButton>
-    <ListItemButton>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary='Year-end sale' />
+      <ListItemText primary='Usuarios' />
     </ListItemButton>
   </React.Fragment>
 );
